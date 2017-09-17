@@ -1,6 +1,7 @@
-#Project gcd
+# Project gcd
 
-Everything should work
+Methods are working
+Test Cases not finished
 
 ----------------------
 Noisternig Luis
