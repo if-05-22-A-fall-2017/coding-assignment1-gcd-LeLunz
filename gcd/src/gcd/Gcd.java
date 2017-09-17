@@ -17,7 +17,22 @@ public class Gcd {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println(gcdPrimeFactors(2061517, 624129));
+        int a = gcdPrimeFactors(13, 13); // Answer: 13
+        int b = gcdEucledian(13, 13);
+        if (a == b && a == 13) {System.out.println("Test 1 is right");}
+        else{System.out.println("Error Test 1 False");}
+        a = gcdPrimeFactors(37, 600); // Answer: 1
+        b = gcdEucledian(37, 600);
+        if (a == b && a == 1) {System.out.println("Test 2 is right");}
+        else{System.out.println("Error Test 2 False");}
+        a = gcdPrimeFactors(20, 100); // Answer: 20 
+        b = gcdEucledian(20, 100);
+        if (a == b && a == 20) {System.out.println("Test 3 is right");}
+        else{System.out.println("Error Test 3 False");}
+        a = gcdPrimeFactors(624129, 2061517); // Answer: 18913
+        b = gcdEucledian(624129, 2061517);
+        if (a == b && a == 18913) {System.out.println("Test 4 is right");}
+        else{System.out.println("Error Test 4 False");}
     }
     public static int gcdPrimeFactors(int a, int b){
         List<Integer> numbers1 = new LinkedList<>();
